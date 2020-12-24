@@ -23,10 +23,10 @@
         <activity android:name=".FindIDActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".JoinUsActivity" />
-        <activity android:name=".MyPageActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".ExplanationActivity" />
         <activity android:name=".IntroActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MyPageActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

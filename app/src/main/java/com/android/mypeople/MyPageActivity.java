@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MyPageActivity extends AppCompatActivity {
+    //탈퇴합니다 메세지 받을 부분
+    final String userDeleteMessage="";
 
     Button mypage_pwbtn, mypage_updatebtn, mypage_canclebtn;
     EditText mypage_tel, mypage_name;
@@ -32,14 +34,13 @@ public class MyPageActivity extends AppCompatActivity {
         mypage_id = findViewById(R.id.mypage_id);
         mypage_userdelete = findViewById(R.id.mypage_userdelete);
 
-        //탈퇴합니다 메세지 받을 부분
-        final String userDeleteMessage="";
 
         mypage_userdelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 MyPage_CustomDialog myPage_customDialog = new MyPage_CustomDialog(MyPageActivity.this);
                 myPage_customDialog.callFunction(userDeleteMessage);
+
             }
         });
 
