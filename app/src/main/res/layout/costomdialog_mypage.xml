@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
     android:orientation="vertical"
     android:background="#fff"
-    android:layout_height="200dp">
+    android:id="@+id/detail_ll_hide"
+    android:layout_height="350dp">
 
 
 
@@ -13,6 +15,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/mpd_title"
+        android:background="#b190ee"
+        android:padding="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
         android:text="회원탈퇴">
 
     </TextView>
@@ -21,13 +28,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/mpd_text"
-        android:textSize="20dp"
+        android:textSize="25dp"
+        android:layout_margin="10dp"
+        android:paddingTop="20dp"
+        android:gravity="center"
         android:textStyle="bold"
         android:text="탈퇴합니다">
 
     </TextView>
 
 <EditText
+    android:layout_margin="10dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/userDeleteMessage"
@@ -38,22 +49,38 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text=""
+    android:layout_margin="10dp"
     android:textColor="#BC2D2D"
     android:id="@+id/userDeleteText">
 
 </TextView>
-    <Button
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/mpd_okbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="확인"
+            android:textSize="20dp"
+            app:backgroundTint="#b190ee"></Button>
+        <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/mpd_okbtn"
-        android:text="확인">
-    </Button>
+        android:layout_weight="1"></LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/mpd_cancelbtn"
-        android:text="취소">
-    </Button>
-
+        <Button
+            android:id="@+id/mpd_cancelbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="취소"
+            android:textSize="20dp"
+            app:backgroundTint="#666666"></Button>
+    </LinearLayout>
 </LinearLayout>

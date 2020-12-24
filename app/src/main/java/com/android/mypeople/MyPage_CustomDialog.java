@@ -3,22 +3,22 @@ package com.android.mypeople;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
-import android.text.Editable;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class MyPage_CustomDialog {
+public class MyPage_CustomDialog extends Dialog {
 
     private Context context;
 
 
     public MyPage_CustomDialog(Context context) {
+        super(context);
         this.context = context;
+
     }
 
     public void callFunction(final String userDeleteMessage) {
@@ -45,7 +45,14 @@ public class MyPage_CustomDialog {
                     userDeleteText.setText("입력하지 않았습니다");
                 }else if (m.equals("탈퇴합니다")){
                     String userDeleteMessage = m;
+                    // 디비에 탈퇴일자 전달해야함
+
+
                     dialog.dismiss();
+
+                    Intent intent = new Intent(context, LoginActivity.class);
+                    context.startActivity(intent);
+
                 } else {
                     userDeleteText.setText("틀린문장을 입력했습니다.");
                 }

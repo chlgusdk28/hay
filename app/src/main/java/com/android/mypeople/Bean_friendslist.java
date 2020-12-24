@@ -38,6 +38,12 @@ public class Bean_friendslist {
         this.fTag5 = fTag5;
     }
 
+    public Bean_friendslist(int fSeqno, int user_uSeqno, String fName) {
+        this.fSeqno = fSeqno;
+        this.user_uSeqno = user_uSeqno;
+        this.fName = fName;
+    }
+
     //Getters and Setters
     public int getfSeqno() {
         return fSeqno;

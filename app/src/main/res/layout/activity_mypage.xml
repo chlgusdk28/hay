@@ -8,6 +8,7 @@
     tools:context=".MyPageActivity">
 
     <LinearLayout
+        android:id="@+id/detail_ll_hide"
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_margin="30dp"
@@ -31,27 +32,27 @@
                 android:textColor="#D34646"
                 >
             </TextView>
-                <LinearLayout
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="35dp"
+                    android:textColor="#333"
+                    android:textStyle="bold"
+                    android:text="나의 정보를">
+                </TextView>
+                <TextView
                     android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="35dp"
-                        android:textColor="#333"
-                        android:textStyle="bold"
-                        android:text="나의 정보를">
-                    </TextView>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="35dp"
-                        android:textStyle="bold"
-                        android:textColor="#333"
-                        android:text="확인해볼까요?">
-                    </TextView>
-                </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:text="확인해볼까요?">
+                </TextView>
+            </LinearLayout>
         </LinearLayout>
 
 
@@ -60,54 +61,54 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:textSize="15dp"
-                    android:id="@+id/mypage_id"
-                    android:layout_marginBottom="10dp"
-                    android:text="내 계정 : hyeona_c@naver.com">
-                </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:id="@+id/mypage_id"
+                android:layout_marginBottom="10dp"
+                android:text="내 계정 : hyeona_c@naver.com">
+            </TextView>
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="25dp"
-                    android:id="@+id/mypage_tel"
-                    android:hint="010-1234-5678"
-                   >
-                </EditText>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="이미 등록된 전화번호 입니다."
-                    android:id="@+id/mypage_telmessage"
-                    android:textColor="#D34646">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:id="@+id/mypage_tel"
+                android:hint="010-1234-5678"
+                >
+            </EditText>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이미 등록된 전화번호 입니다."
+                android:id="@+id/mypage_telmessage"
+                android:textColor="#D34646">
 
-                </TextView>
+            </TextView>
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="25dp"
-                    android:id="@+id/mypage_name"
-                    android:hint="최현아"
-                    >
-                </EditText>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:id="@+id/mypage_name"
+                android:hint="최현아"
+                >
+            </EditText>
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#b190ee"
-                    android:backgroundTint="#b190ee"
-                    android:text="비밀번호 수정"
-                    android:textStyle="bold"
-                    android:id="@+id/mypage_pwbtn"
-                    android:textSize="18dp"
-                    android:layout_marginTop="20dp"
-                    app:backgroundTint="#b190ee">
-                </Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#b190ee"
+                android:backgroundTint="#b190ee"
+                android:text="비밀번호 수정"
+                android:textStyle="bold"
+                android:id="@+id/mypage_pwbtn"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                app:backgroundTint="#b190ee">
+            </Button>
         </LinearLayout>
 
         <LinearLayout
@@ -117,34 +118,34 @@
             android:orientation="horizontal">
 
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#666"
-            android:layout_weight="2"
-            android:text="취소"
-            android:id="@+id/mypage_canclebtn"
-            android:textStyle="bold"
-            android:textSize="18dp"
-            app:backgroundTint="#666">
-        </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#666"
+                android:layout_weight="2"
+                android:text="취소"
+                android:id="@+id/mypage_canclebtn"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                app:backgroundTint="#666">
+            </Button>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
             </LinearLayout>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:background="#b190ee"
-            android:text="수정"
-            android:id="@+id/mypage_updatebtn"
-            android:textStyle="bold"
-            android:textSize="18dp"
-            app:backgroundTint="#b190ee">
-        </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#b190ee"
+                android:text="수정"
+                android:id="@+id/mypage_updatebtn"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                app:backgroundTint="#b190ee">
+            </Button>
 
         </LinearLayout>
 
