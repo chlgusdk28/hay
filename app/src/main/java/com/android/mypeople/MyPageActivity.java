@@ -32,14 +32,14 @@ public class MyPageActivity extends AppCompatActivity {
         mypage_id = findViewById(R.id.mypage_id);
         mypage_userdelete = findViewById(R.id.mypage_userdelete);
 
-
+        //탈퇴합니다 메세지 받을 부분
+        final String userDeleteMessage="";
 
         mypage_userdelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(MyPageActivity.this);
-                builder.setTitle("탈퇴하기").setMessage("탈퇴하시려면 해당 문자를 동일하게 입력해주세요.");
-                builder.setMessage("탈퇴하겠습니다.");
+                MyPage_CustomDialog myPage_customDialog = new MyPage_CustomDialog(MyPageActivity.this);
+                myPage_customDialog.callFunction(userDeleteMessage);
             }
         });
 
