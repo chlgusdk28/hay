@@ -17,14 +17,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
-        <activity android:name=".MyPage_Password"></activity>
-        <activity android:name=".UpdatePwActivty" />
+        <activity android:name=".UserDeleteActivity"></activity>
+        <activity android:name=".MyPage_Password" />
         <activity android:name=".GalleryActivity" />
         <activity android:name=".DetailViewActivity" />
         <activity android:name=".TAGActivity" />
         <activity android:name=".AddFriendsActivity" />
         <activity android:name=".FindPWActivity" />
-        <activity android:name=".FindIDActivity" />
+        <activity android:name=".MyPageActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".JoinUsActivity" />
         <activity android:name=".JoinUsAddActivity" />
@@ -32,7 +32,7 @@
         <activity android:name=".ExplanationActivity" />
         <activity android:name=".IntroActivity" />
         <activity
-            android:name=".MyPageActivity"
+            android:name=".FindIDActivity"
             android:windowSoftInputMode="adjustNothing">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

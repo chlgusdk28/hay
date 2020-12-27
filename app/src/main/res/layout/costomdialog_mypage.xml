@@ -2,14 +2,11 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="300dp"
+    android:layout_width="320dp"
     android:orientation="vertical"
     android:background="#fff"
     android:id="@+id/detail_ll_hide"
     android:layout_height="350dp">
-
-
-
 
     <TextView
         android:layout_width="match_parent"
@@ -42,7 +39,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/userDeleteMessage"
-    android:hint="메세지를 입력하세요"
+    android:hint="'탈퇴합니다'를 입력해주세요.'"
     android:textSize="20dp">
 </EditText>
 <TextView
@@ -68,6 +65,7 @@
             android:layout_weight="2"
             android:text="확인"
             android:textSize="20dp"
+            android:background="@drawable/login_loginbtn_shape"
             app:backgroundTint="#b190ee"></Button>
         <LinearLayout
         android:layout_width="wrap_content"
@@ -80,6 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:text="취소"
+            android:background="@drawable/login_loginbtn_shape"
             android:textSize="20dp"
             app:backgroundTint="#666666"></Button>
     </LinearLayout>
