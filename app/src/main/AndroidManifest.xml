@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.mypeople">
+    <!-- Camera Storage permission for image pick -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -31,15 +35,13 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".ExplanationActivity" />
         <activity android:name=".IntroActivity" />
-        <activity
-            android:name=".FindIDActivity"
-            android:windowSoftInputMode="adjustNothing">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <!--2020.12.27-태현-->
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Theme.MyPeople"
+            />
+
     </application>
 
 </manifest>
